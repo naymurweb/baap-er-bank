@@ -12,7 +12,6 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   ) {
     window.location.href = "../banking.html";
   } else {
-    // error handel
     emailInputField.style.border = "2px solid red";
     passwordInputField.style.border = "2px solid red";
   }
