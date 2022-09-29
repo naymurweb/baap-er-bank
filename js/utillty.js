@@ -20,3 +20,10 @@ function inputFieldValue(inputId) {
   inputField.value = "";
   return inputFieldValue;
 }
+
+// amount value
+function amountValue(amountId) {
+  let amount = document.getElementById(amountId);
+  let amountValue = parseFloat(amount.innerText);
+  return amountValue;
+}
