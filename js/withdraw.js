@@ -8,7 +8,11 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   let totalBalanceAmount = amountValue("balance-total");
 
   //   error handel
-  if (isNaN(withdrawInputValue) || withdrawInputValue < 0) {
+  if (
+    isNaN(withdrawInputValue) ||
+    withdrawInputValue < 0 ||
+    withdrawInputValue > totalBalanceAmount
+  ) {
     withdrawInput.style.border = "2px solid red";
     withdrawInput.setAttribute("placeholder", "Please valid withdraw amount!");
   } else {
